@@ -1,6 +1,5 @@
 from gensim.models.doc2vec import Doc2Vec, TaggedDocument
 from gensim.models.word2vec import Word2Vec
-from gensim.test.utils import common_texts
 from nltk.tokenize import word_tokenize
 import pandas as pd
 
