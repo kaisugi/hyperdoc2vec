@@ -25,7 +25,10 @@ poetry run python -c "import nltk; nltk.download('punkt')"
 ## Demo
 
 ```
-PYTHONHASHSEED=2021 poetry run python main.py
+PYTHONHASHSEED=2021 poetry run python hd2v.py --retrofit=True
 ```
 
 `PYTHONHASHSEED` must be included if you want to get the reproducible results.
+
+Option:  
+- `--retrofit`: If true, pv-dm retrofitting is enabled. Otherwise disabled (random init). Default value is `True`.
