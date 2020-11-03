@@ -14,6 +14,7 @@ from util import *
 
 SEED = 2021
 VDIM = 100 # dimension of vectors
+WSIZE = 50 # window size
 
 
 def prepare_datasets():
@@ -47,9 +48,10 @@ def pretraining(paper_data):
     if not os.path.exists("./models/pv-dm.txt"):
         model = Doc2Vec(
             vector_size=VDIM, 
-            workers=1, # to ensure reproducibility
+            window=WSIZE,
             epochs=5,
             dm=1, # use pv-dm
+            workers=1, # to ensure reproducibilit
             seed=SEED
         )
         model.build_vocab(paper_data)
@@ -77,10 +79,11 @@ def training(citation_data, retrofit):
         or (not retrofit and not os.path.exists("./models/h-d2v-random.model"))):
         model = Word2Vec(
             size=VDIM,
-            workers=1, # to ensure reproducibility
+            window=WSIZE,
             negative=1000,
             sg=0, # use CBOW model
             cbow_mean=1, # use average vector
+            workers=1, # to ensure reproducibility
             seed=SEED
         )
 

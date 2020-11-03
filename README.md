@@ -25,7 +25,8 @@ poetry run python -c "import nltk; nltk.download('punkt')"
 ## Demo
 
 ```
-PYTHONHASHSEED=2021 poetry run python hd2v.py --retrofit=True
+poetry shell
+PYTHONHASHSEED=2021 python hd2v.py --retrofit=True
 ```
 
 `PYTHONHASHSEED` must be included if you want to get the reproducible results.
