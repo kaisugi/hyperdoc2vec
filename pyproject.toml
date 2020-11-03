@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "hyperdoc2vec"
+version = "1.0.0"
+description = ""
+authors = ["Kaito Sugimoto <kaito_sugimoto@is.s.u-tokyo.ac.jp>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+nltk = "^3.5"
+pandas = "^1.1.4"
+gensim = "^3.8.3"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

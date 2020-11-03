@@ -1,0 +1,23 @@
+For most entity disambiguation systems,
+the secret recipes are feature representations for mentions and entities, most of
+which are based on Bag-of-Words (BoW)
+representations. Commonly, BoW has
+several drawbacks: (1) It ignores the
+intrinsic meaning of words/entities; (2)
+It often results in high-dimension vector
+spaces and expensive computation; (3) For
+different applications, methods of designing handcrafted representations may be
+quite different, lacking of a general guideline. In this paper, we propose a different
+approach named EDKate. We first learn
+low-dimensional continuous vector representations for entities and words by jointly
+embedding knowledge base and text in the
+same vector space. Then we utilize these
+embeddings to design simple but effective features and build a two-layer disambiguation model. Extensive experiments
+on real-world data sets show that (1) The
+embedding-based features are very effective. Even a single one embedding-based
+feature can beat the combination of several BoW-based features. (2) The superiority is even more promising in a difficult
+set where the mention-entity prior cannot
+work well. (3) The proposed embedding
+method is much better than trivial implementations of some off-the-shelf embedding algorithms. (4) We compared our
+EDKate with existing methods/systems
+and the results are also positive.
