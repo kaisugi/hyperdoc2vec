@@ -51,7 +51,7 @@ def pretraining(paper_data):
             window=WSIZE,
             epochs=5,
             dm=1, # use pv-dm
-            workers=1, # to ensure reproducibilit
+            workers=1, # to ensure reproducibility
             seed=SEED
         )
         model.build_vocab(paper_data)
