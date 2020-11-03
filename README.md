@@ -4,7 +4,7 @@ An unofficial implementation of [hyperdoc2vec (ACL 2018)](https://www.aclweb.org
 
 This repo also contains an example of papers and citations (check `/data` folder). Indeed this is a "toy" example and you cannot expect meaningful results from it.
 
-Since the authors did not release not only source codes but datasets, the correctness of this implementation cannot be checked. If you have any doubts or question, please open an issue.
+Since the authors did not release not only source codes but datasets, the correctness of this implementation cannot be checked. If you have any doubts or questions, please open an issue.
 
 ## Requirements
 
