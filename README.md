@@ -15,7 +15,7 @@ For more detail in required packages, see `pyproject.toml`.
 
 ## Preparation
 
-After cloning, run the commands bellow.
+After cloning, run the commands below.
 
 ```
 poetry install
