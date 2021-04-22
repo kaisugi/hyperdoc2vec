@@ -26,7 +26,7 @@ poetry run python -c "import nltk; nltk.download('punkt')"
 
 ```
 poetry shell
-PYTHONHASHSEED=2021 python hd2v.py --retrofit=True
+PYTHONHASHSEED=42 python hd2v.py --retrofit=True
 ```
 
 `PYTHONHASHSEED` must be included if you want to get the reproducible results.

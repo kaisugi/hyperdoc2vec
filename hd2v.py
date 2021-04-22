@@ -12,7 +12,7 @@ import os
 
 from util import *
 
-SEED = 2021
+SEED = 42
 VDIM = 100 # dimension of vectors
 WSIZE = 50 # window size
 
